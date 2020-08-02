@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/desafio.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Workshop - Desafio</title>
+    <link rel="icon" href="img/favicon.ico" />
+    
+  </head>
+  <body>
+    <nav class="barra-navegacao">
+      <img
+        class="barra-navegacao__logotipo"
+        src="img/logotipo-reprograma.png"
+      />
+    </nav>
+
+    
+    <div class="card text-center">
+      <h5 class="card-header">
+        Calculadora Freelancer
+      </h5>
+      <div class="card-body">
+        <h6 class="card-title">
+          Está é uma ferramenta de apoio para você Freelancer!         
+          Ao final, descubra o valor total que ganhará por projeto.
+        </h6>
+
+        <div>
+          <p>
+            <small class="text-muted">
+              Dica: Você sabe o quanto cobrar por uma hora trabalhada? 
+              O valor deve ser justo para ambas as partes profissional/contratante.<br>
+              <a href="https://comunidade.rockcontent.com/como-cobrar-um-freelance/" target="_blank" alt="Abre em nova janela"> Acesse aqui </a> 
+              um artigo que vai te ajudar a encontrar o jeito certo de cobrar por um trabalho freelance!
+            </small>         
+          </p>
+        </div>
+        <br>  
+        <label class="card-text" for="valor-hora">Valor Hora (reais):</label><br>
+        <input type="number" id="valor-hora" value="0" /><br>
+    
+        <label class="card-text" for="horas-projeto">Horas Projeto:</label><br>
+        <input type="number" id="horas-projeto" value="0"/><br>
+
+
+        <button onclick="calcular()" class="btn btn-primary">Calcular Projeto</button><br>
+      </div>
+      <div class="card-footer text-muted">
+        <span id="resposta" class="lead"><strong>Resposta</strong></span>
+        <div>
+          <p>
+            <small class="text-muted">
+              Lembre-se que este é o valor bruto, e se faz necessário descontar a alíquota de impostos.<br> 
+              Por exemplo, se for Microempreendedor Individual (MEI) deverá subtrair o valor da  contribuição mensal (DAS).  
+            </small> 
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="shadow-sm p-3 mb-5 bg-white rounded">
+      <p class="lead">
+        <a href="index.html"><strong> Voltar :) </strong></a>
+      </p>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/desafio.js"></script>
+  </body>
+</html>
